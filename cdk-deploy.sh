@@ -56,7 +56,7 @@ fi
 #fi
 
 # Change directory to SaponawsTextractWorkflowCDK
-cd sap-on-aws-documentprocessing-workflow
+cd ~/sap-on-aws-documentprocessing-workflow
 
 # Install latest CDK
 
