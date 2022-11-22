@@ -1,0 +1,23 @@
+{
+  "app": "python3 app.py",
+  "context": {
+     "stackname": "ent225-aws-textract-automation-riv",
+     "textract": {
+      "s3bucketname": "ent225-textract-documents"
+    },
+    "appflow": {
+      "snstopic": "ent225-missingorder-notification",
+      "databucket": "ent225-sap-orders",
+      "s3bucketname": "ent225-orders-for-update",
+      "prefix": "orderitems",
+      "sap_host": "riv2022-ent225-workshop.appflow.sap.aws.dev",
+      "sap_catalog_path": "/sap/opu/odata/iwfnd/catalogservice;v=2",
+      "sap_port": 443,
+      "sap_client": "100",
+      "sap_langu": "EN",
+      "sap_object": "/sap/opu/odata/sap/ZDEMO_ORDERS_ODP_SRV/EntityOf2LIS_11_VAHDR",
+      "sap_dest_object": "/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrderItem",
+      "connection-name": "ent225-sap-connection"
+    }
+  }
+}
