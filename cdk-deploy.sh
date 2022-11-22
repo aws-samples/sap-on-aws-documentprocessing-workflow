@@ -32,31 +32,31 @@ then
         exit 1
 fi
 
-# Check if the file has been downloaded
+## Check if the file has been downloaded
 #cd ~
 #if [ ! -e $DEPLOY_FILE ]; then echo "Missing $DEPLOY_FILE"; exit 1; fi
 
 
-cd ~
-git clone https://github.com/sap-on-aws/workshop-asset.git
-if [ $? -ne 0 ]
-    then
-	echo "ERROR: Repo clone failed, aborting!"
-    exit 1
-fi
+#cd ~
+#git clone https://github.com/sap-on-aws/workshop-asset.git
+#if [ $? -ne 0 ]
+#    then
+#	echo "ERROR: Repo clone failed, aborting!"
+#    exit 1
+#fi
 
 # Unzip the file 
-echo "Unziping the deployment file"
-cd workshop-asset
-unzip -o $DEPLOY_FILE
-if [ $? -ne 0 ]
-    then
-	echo "ERROR: Unzip failed, aborting!"
-    exit 1
-fi
+#echo "Unziping the deployment file"
+#cd sap-on-aws-documentprocessing-workflow
+#unzip -o $DEPLOY_FILE
+#if [ $? -ne 0 ]
+#    then
+#	echo "ERROR: Unzip failed, aborting!"
+#    exit 1
+#fi
 
 # Change directory to SaponawsTextractWorkflowCDK
-cd SaponawsTextractWorkflowCDK
+cd sap-on-aws-documentprocessing-workflow
 
 # Install latest CDK
 
