@@ -10,7 +10,7 @@
       "databucket": "ent225-sap-orders",
       "s3bucketname": "ent225-orders-for-update",
       "prefix": "orderitems",
-      "sap_host": "riv2022-ent225-workshop.appflow.sap.aws.dev",
+      "sap_host": "https://riv2022-ent225-workshop.appflow.sap.aws.dev",
       "sap_catalog_path": "/sap/opu/odata/iwfnd/catalogservice;v=2",
       "sap_port": 443,
       "sap_client": "100",
