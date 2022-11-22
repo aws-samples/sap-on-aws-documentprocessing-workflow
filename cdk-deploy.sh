@@ -25,10 +25,10 @@ SAPPASS=$3
 ACCOUNTID=`aws sts get-caller-identity|jq -r .Account`
 DEPLOY_FILE="SaponawsTextractWorkflowCDK.zip"
 
-if [ $# -ne 3 && $# -gt 4 ]
+if [ $# -ne 3 ]
 then
-        echo "Synopsis: provide <your_email> <sap-user> <sap-passwd>" >&2
-        echo "" >&2
+        echo "Synopsis: provide <your_email> <sap-user> <sap-passwd>" 
+        echo "" 
         exit 1
 fi
 
