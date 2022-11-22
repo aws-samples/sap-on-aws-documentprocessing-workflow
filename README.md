@@ -26,9 +26,9 @@ This project is set up like a standard Python project.  For an integrated develo
 2.  Clone the github repository and navigate to the directory.
 
 ```
-$ git clone https://github.com/aws-samples/aws-idp-sap-integration.git
+$ git clone https://github.com/aws-samples/sap-on-aws-documentprocessing-workflow
 
-$ cd aws-idp-sap-integration
+$ cd sap-on-aws-documentprocessing-workflow
 ```
 To manually create a virtualenv 
 
