@@ -23,40 +23,15 @@ EMAIL=$1
 SAPUSER=$2
 SAPPASS=$3
 ACCOUNTID=`aws sts get-caller-identity|jq -r .Account`
-DEPLOY_FILE="SaponawsTextractWorkflowCDK.zip"
 
 if [ $# -ne 3 ]
 then
-        echo "Synopsis: provide <your_email> <sap-user> <sap-passwd>" >&2
-        echo "" >&2
+        echo "Synopsis: provide <your_email> <sap-user> <sap-passwd>"  
         exit 1
 fi
 
-# Check if the file has been downloaded
-#cd ~
-#if [ ! -e $DEPLOY_FILE ]; then echo "Missing $DEPLOY_FILE"; exit 1; fi
-
-
-cd ~
-git clone https://github.com/sap-on-aws/workshop-asset.git
-if [ $? -ne 0 ]
-    then
-	echo "ERROR: Repo clone failed, aborting!"
-    exit 1
-fi
-
-# Unzip the file 
-echo "Unziping the deployment file"
-cd workshop-asset
-unzip -o $DEPLOY_FILE
-if [ $? -ne 0 ]
-    then
-	echo "ERROR: Unzip failed, aborting!"
-    exit 1
-fi
-
 # Change directory to SaponawsTextractWorkflowCDK
-cd SaponawsTextractWorkflowCDK
+cd ~/sap-on-aws-documentprocessing-workflow
 
 # Install latest CDK
 
@@ -86,7 +61,6 @@ if [ $? -ne 0 ]
 	echo "ERROR: Python environment activation failed, aborting!"
     exit 1
 fi
-
 
 # Install the required dependencies
 echo "Installing pip"
