@@ -16,6 +16,10 @@ This project will create the following in your AWS cloud environment specified:
 * S3 Buckets
 * Appflow Data flows 
 * Appflow connector profile 
+* AWS Step Functions
+* SNS Topic
+* Event Bridge Rule
+* Lambda
 
 ## Deploying the CDK Project
 
