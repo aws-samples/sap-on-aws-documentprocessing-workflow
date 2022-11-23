@@ -20,6 +20,7 @@ This project will create the following in your AWS cloud environment specified:
 * SNS Topic
 * Event Bridge Rule
 * Lambda
+* IAM roles
 
 ## Deploying the CDK Project
 
