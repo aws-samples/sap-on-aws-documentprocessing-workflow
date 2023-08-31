@@ -18,7 +18,7 @@ This project will create the following in your AWS cloud environment specified:
 * Appflow connector profile 
 * AWS Step Functions
 * SNS Topic
-* Event Bridge Rule
+* Event Bridge Rule 
 * Lambda
 * IAM roles
 
